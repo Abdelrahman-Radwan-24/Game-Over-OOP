@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Game Over Site" />
+    <meta name="keywords" content="Game Over , موقع ألعاب" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="ABDELRAHMAN RADWAN" />
+    <link rel="shortcut icon" href="assets/images/by.png" type="image/x-icon" />
+    <title>Game Over</title>
+    <!--?=======> BootStrap File<=======-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--?=======> Main CSS File <=======-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="gamesHome" class="games">
+      <header>
+        <img
+          class="w-100"
+          src="./assets/images/wraper.png"
+          alt="pohto game over"
+        />
+      </header>
+
+      <nav
+        class="navbar navbar-expand-lg position-sticky top-0 pt-0 z-3 w-75 m-auto"
+      >
+        <div class="container game-nav py-2">
+          <h5 class="navbar-brand mb-0 text-uppercase">
+            <img
+              style="max-width: 40px"
+              src="./assets/images/logo-sm.png"
+              alt="game over logo"
+            />
+            Game Reviews
+          </h5>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase menu">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link active"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container my-5 home">
+        <div class="row" id="gamesData"></div>
+      </main>
+    </section>
+
+    <section id="gamesDetails" class="details d-none">
+      <div class="container">
+        <header class="hstack justify-content-between">
+          <h1 class="h3 py-4 text-center">Details Game</h1>
+          <button id="btnClose" class="btn-close btn-close-white"></button>
+        </header>
+        <div class="row my-3" id="detailsData"></div>
+      </div>
+    </section>
+
+    <main class="loading d-none">
+      <span class="loader"></span>
+    </main>
+    <!--!======> bootstrap.bundle JS File <=======-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--!===========> Main JS File <============-->
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
